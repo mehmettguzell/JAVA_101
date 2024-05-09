@@ -9,7 +9,7 @@ public class ShoppingCart {
     }
 
     public void addProduct(String fruit, double weight) {
-        if (Main.getProductPrices().containsKey(fruit)) {
+        if (Suggesting_Activites_Temperature.getProductPrices().containsKey(fruit)) {
             if (items.containsKey(fruit)) {
                 double currentWeight = items.get(fruit);
                 double updatedWeight = currentWeight + weight;
@@ -23,7 +23,7 @@ public class ShoppingCart {
     }
 
     public void deleteProduct(String fruit, double weight) {
-        if (Main.getProductPrices().containsKey(fruit)) {
+        if (Suggesting_Activites_Temperature.getProductPrices().containsKey(fruit)) {
             if (items.containsKey(fruit)) {
                 double currentWeight = items.get(fruit);
                 double updatedWeight = currentWeight - weight;
@@ -45,7 +45,7 @@ public class ShoppingCart {
         for (Map.Entry<String, Double> entry : items.entrySet()) {
             String fruit = entry.getKey();
             double weight = entry.getValue();
-            double pricePerKg = Main.getProductPrices().get(fruit);
+            double pricePerKg = Suggesting_Activites_Temperature.getProductPrices().get(fruit);
             double totalPriceForItem = weight * pricePerKg;
             System.out.println(fruit + ": " + weight + " -> " + totalPriceForItem + "TL");
             totalPrice += totalPriceForItem;

@@ -57,7 +57,7 @@ public class Main {
     }
 
     public static void setProductPrices(HashMap<String, Double> productPrices) {
-        Main.productPrices = productPrices;
+        Suggesting_Activites_Temperature.productPrices = productPrices;
     }
 
     private static void InitFruitePrices() {
