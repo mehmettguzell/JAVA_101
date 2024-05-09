@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Sort_Largest_To_Smallest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
