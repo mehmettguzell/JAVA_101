@@ -22,7 +22,7 @@ public class Main {
             System.out.print("Choice: ");
             int tripType = Integer.parseInt(scanner.nextLine());
             if (tripType != 1 && tripType != 2) {
-                throw new NumberFormatException("Invalid trip type! Please enter 1 or 2.");
+                throw new NumberFormatException("Invalid trip type! Please enter 1 or 2: ");
             }
             System.out.println("---------------");
 
