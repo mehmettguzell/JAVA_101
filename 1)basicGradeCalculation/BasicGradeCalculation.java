@@ -14,7 +14,7 @@ public class BasicGradeCalculation {
 
         int toplam = (mat + fizik + turkce + tarih + kimya + muzik) ;
         double sonuc = toplam / 6.0;
-        System.out.println("Ortalamanız: " + sonuc);
+        System.out.println("Ortalamaniz: " + sonuc);
 
         String durum = sonuc >= 50.0 ? "Geçtiniz" : "Kaldınız";
         System.out.println(durum);
