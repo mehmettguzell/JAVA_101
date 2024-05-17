@@ -12,7 +12,7 @@ public class Main {
     }
 
     private static boolean isPrime(int number, int divisor) {
-       if(number < 2)
+        if(number < 2)
             return false;
         if (number == 2){
             return true;
